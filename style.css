@@ -1,0 +1,60 @@
+:root {
+  --bg: #111216;
+  --text: #ecedf0;
+  --muted: #a0a4ad;
+  --accent: #ff8a3d;
+  --line: rgb(255 255 255 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 'Segoe UI', system-ui, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 34px;
+}
+
+h2 {
+  margin-top: 32px;
+  font-size: 20px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}

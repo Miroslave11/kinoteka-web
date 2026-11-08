@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zásady ochrany soukromí – Kinotéka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="./">Kinotéka</a>
+        <a href="soukromi.html">Zásady ochrany soukromí</a>
+      </nav>
+      <h1>Zásady ochrany soukromí</h1>
+      <p class="muted">Platné od 8. listopadu 2026</p>
+
+      <h2>Stručně</h2>
+      <p>
+        Kinotéka nemá žádný vlastní server. Data zůstávají v počítači uživatele a – pokud zapne
+        sdílení – v jeho vlastním Google Disku. Autor aplikace k nim nemá přístup a nikomu je
+        nepředává.
+      </p>
+
+      <h2>Jaká data Kinotéka zpracovává</h2>
+      <ul>
+        <li>Knihovnu filmů, seriálů a videí, deník zhlédnutí, hodnocení a nastavení – ukládá je jen v počítači uživatele.</li>
+        <li>
+          Při zapnutém sdílení: deník zhlédnutí, hodnocení a seznam videí z YouTube (odkazy,
+          názvy, kategorie). Ty se ukládají do skryté složky aplikace na Google Disku uživatele.
+        </li>
+      </ul>
+
+      <h2>Přístup k účtu Google</h2>
+      <p>Po přihlášení účtem Google žádá Kinotéka jen o tato oprávnění:</p>
+      <ul>
+        <li>
+          <strong>Skrytá složka aplikace na Google Disku</strong> (<code>drive.appdata</code>) –
+          ukládání a čtení vlastních souborů pro sdílení. Kinotéka nevidí ani nemění žádné jiné
+          soubory na Disku.
+        </li>
+        <li><strong>E-mailová adresa účtu</strong> – jen k zobrazení, ke kterému účtu je Kinotéka připojená.</li>
+      </ul>
+      <p>
+        Přihlašovací údaje (klíče od Googlu) se ukládají šifrovaně v počítači uživatele. Data
+        z účtu Google se nepoužívají k reklamě, analýze ani k ničemu jinému než ke sdílení mezi
+        počítači uživatele a nepředávají se třetím stranám.
+      </p>
+      <p>
+        Používání informací získaných z rozhraní Google API odpovídá
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">zásadám Google API Services User Data Policy</a>,
+        včetně požadavků Limited Use.
+      </p>
+
+      <h2>Jak sdílení zrušit</h2>
+      <ul>
+        <li>V Kinotéce: Nastavení → Sdílení → Odhlásit.</li>
+        <li>
+          V účtu Google: <a href="https://myaccount.google.com/permissions">Zabezpečení → Aplikace třetích stran s přístupem k účtu</a> → Kinotéka → Odebrat přístup.
+          Skrytou složku aplikace pak lze smazat na Google Disku v Nastavení → Správa aplikací.
+        </li>
+      </ul>
+
+      <h2>Další služby</h2>
+      <p>
+        Kinotéka dále stahuje veřejné informace o filmech (TMDB, IMDb), titulky (OpenSubtitles,
+        jen s vlastním klíčem uživatele) a videa z YouTube. Těmto službám předává jen to, co je
+        k dané funkci potřeba (např. název filmu při hledání), nikoli osobní údaje.
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>Dotazy k těmto zásadám: <a href="https://github.com/Miroslave11/kinoteka-web/issues">github.com/Miroslave11/kinoteka-web/issues</a>.</p>
+
+      <hr />
+      <h2 lang="en">Summary in English</h2>
+      <p lang="en">
+        Kinotéka is a personal desktop media player for Windows with no server of its own. If the
+        user enables sharing, it stores its sync files (watch diary, ratings, YouTube video
+        list) in the hidden application data folder of the user's own Google Drive
+        (<code>drive.appdata</code> scope) and reads the account e-mail only to show which
+        account is connected. It cannot see other Drive files. Data is not shared with anyone,
+        not used for advertising, and Kinotéka's use of information received from Google APIs
+        adheres to the Google API Services User Data Policy, including the Limited Use
+        requirements. Access can be revoked at any time in Kinotéka (Settings → Sharing → Sign
+        out) or at myaccount.google.com/permissions.
+      </p>
+
+      <footer>Kinotéka</footer>
+    </main>
+  </body>
+</html>
